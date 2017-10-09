@@ -72,7 +72,8 @@ public class DetectUtils2 {
 		List<HashMap<String, Object>> constraintRuleList=new ArrayList<HashMap<String,Object>>();
 		
 		//是否国内ip校验
-		if(Url2IpUtil.isNetworkConnect()){
+		//if(Url2IpUtil.isNetworkConnect()){
+		if(Url2IpUtil.getIpsByDomain("www.baidu.com").size()>0){
 			// TODO 网络已连接 
 			//域名
 			handleDomanAddressUseThreadPool(currentDomainNameList, constraintRuleList);
@@ -159,7 +160,7 @@ public class DetectUtils2 {
 		if(null==currentDomainNameList)return;
 		int size = currentDomainNameList.size();
 		if(size==0)return;
-		int nThreads = size;//size>50?50:size;
+		int nThreads = size>30?30:size;//size;//size>50?50:size;
         ExecutorService executorService = Executors.newFixedThreadPool(nThreads);  
         List<Future<HashMap<String, Object>>> futures = new ArrayList<Future<HashMap<String, Object>>>(nThreads); 
         for (int i = 0; i < size; i++) {  

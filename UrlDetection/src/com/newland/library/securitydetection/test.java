@@ -7,15 +7,15 @@ public class test {
 
 	public static void main(String[] args) {
 		//t1();
-		t2(); 
+		//t2(); 
 		//System.out.println(IpUtil.isChinaIp("14.215.177.38")); //218.66.48.233
 		//System.out.println(IpUtils.isChinaIp("14.215.177.38"));//百度 广东
 		//System.out.println(IpUtils.isChinaIp("203.128.1.255"));//巴基斯坦
 		//System.out.println(IpUtils.isChinaIp("218.66.48.233"));//福州
 		//System.out.println(IpUtils.isChinaIp("59.125.39.5"));//台湾
 		//System.out.println(IpUtil.isChinaIp("66.102.251.33"));//新浪国内
-		
-		
+		//System.out.println(IpUtil.isChinaIp("120.25.135.47"));//新浪国内
+		System.out.println(IpUtil.isChinaIp("117.27.139.124"));
 	}
 
 	private static void t2() {

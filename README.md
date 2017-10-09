@@ -6,4 +6,5 @@
 ### UrlDetection：
 1、包含IP块解析，判断ip是否国内
 
-
+### XmlTool：
+1、xml解析框架XStream的使用

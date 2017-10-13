@@ -6,5 +6,10 @@
 ### UrlDetection：
 1、包含IP块解析，判断ip是否国内
 
+<<<<<<< HEAD
 ### redis客户端java连接demo：
 1、测试服务端在101的红帽服务器上
+=======
+### XmlTool：
+1、xml解析框架XStream的使用
+>>>>>>> origin/master
